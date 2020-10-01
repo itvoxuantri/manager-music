@@ -1,0 +1,10 @@
+com\tma\spring\entity\Music.class
+com\tma\spring\jms\JmsProducer$1.class
+com\tma\spring\util\Util.class
+com\tma\spring\jms\JmsProducer.class
+com\tma\spring\Test$1.class
+com\tma\spring\entity\BaseEntity.class
+com\tma\spring\service\MusicServiceImpl.class
+com\tma\spring\Test.class
+com\tma\spring\mbean\MusicServiceImplMBean.class
+com\tma\spring\jms\JmsConsumer.class
