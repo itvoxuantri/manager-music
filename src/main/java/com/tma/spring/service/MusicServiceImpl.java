@@ -6,6 +6,9 @@ import java.util.Date;
 import java.util.List;
 
 import javax.management.NotificationBroadcasterSupport;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -44,8 +47,11 @@ public class MusicServiceImpl extends NotificationBroadcasterSupport implements 
 
 	public void updateRecord(Music music) {
 		Session sessionObj = sessionFactory.getCurrentSession();
-		music = (Music) sessionObj.get(Music.class, music.getId());
-		music.setName(music.getName());
+		Music musicOld = (Music) sessionObj.get(Music.class, music.getId());
+		musicOld.setName(music.getName());
+		musicOld.setNameAuthor(music.getNameAuthor());
+		musicOld.setNameCategory(music.getNameCategory());
+		sessionObj.save(musicOld);
 		logger.info("\nMusic With Id?= " + music.getId() + " Is Successfully Updated In The Database!\n");
 		jmsProducer.sendMessage("Updated " + music.toString() + " at " + Util.convertDatetimeToString(new Date()));
 	}
@@ -59,10 +65,12 @@ public class MusicServiceImpl extends NotificationBroadcasterSupport implements 
 	}
 
 	public Music findRecordById(Integer id) {
-		Music music = null;
 		Session sessionObj = sessionFactory.getCurrentSession();
-		music = (Music) sessionObj.get(Music.class, id);
-		return music;
+		CriteriaBuilder cb = sessionObj.getCriteriaBuilder();
+		CriteriaQuery<Music> cq = cb.createQuery(Music.class);
+		Root<Music> root = cq.from(Music.class);
+		cq.where(cb.equal(root.get("id"), id));
+		return sessionObj.createQuery(cq).uniqueResult();
 	}
 
 }

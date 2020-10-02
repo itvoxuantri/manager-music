@@ -1,8 +1,13 @@
-D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\Test.java
-D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\entity\Music.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\view\CreateView.java
 D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\jms\JmsConsumer.java
-D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\service\MusicServiceImpl.java
 D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\mbean\MusicServiceImplMBean.java
 D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\jms\JmsProducer.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\entity\Music.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\service\MusicServiceImpl.java
 D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\entity\BaseEntity.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\Main.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\view\InfoView.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\view\DeleteView.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\view\UpdateView.java
 D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\util\Util.java
+D:\VXTRI\MusicManager\Project\music-manager-client\src\main\java\com\tma\spring\view\HomeView.java

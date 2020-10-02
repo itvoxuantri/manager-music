@@ -67,7 +67,7 @@ public class Music extends BaseEntity implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Music [id=" + id + ", name=" + name + ", nameAuthor=" + nameAuthor + ", nameCategory=" + nameCategory
+		return "Music [Id: " + id + ", Name: " + name + ", Name Author: " + nameAuthor + ", Name Category: " + nameCategory
 				+ "]";
 	}
 
