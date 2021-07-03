@@ -7,7 +7,7 @@ import com.tma.spring.entity.Music;
 import com.tma.spring.mbean.MusicServiceImplMBean;
 
 public class CreateView {
-	public CreateView(MusicServiceImplMBean musicService) throws SQLException {
+	public CreateView(MusicServiceImplMBean musicService) throws SQLException  {
 		displayMenu(musicService);
 		System.out.print("Select option: ");
 		@SuppressWarnings("resource")
