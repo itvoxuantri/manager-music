@@ -32,7 +32,7 @@ import com.tma.spring.view.HomeView;
 public class Main {
 	public static void main(String[] args)
 			throws SQLException, IOException, MalformedObjectNameException, NamingException, JMSException {
-		System.out.println("test123 âksldajskds");
+		System.out.println("test123 âksldajskds  2gfdgdfhgfh");
 		JMXConnector jmxc = null;
 		InitialContext initialContext = null;
 		Connection connection = null;
